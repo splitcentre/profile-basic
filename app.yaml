@@ -10,4 +10,4 @@ handlers:
 
 # Optional: Define your app's environment
 env_variables:
-  ENV: "production"
+  ENV: "production" 
