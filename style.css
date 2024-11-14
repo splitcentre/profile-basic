@@ -1,0 +1,147 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.profile-header {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+.profile-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.profile-header h1 {
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
+.job-title {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.description {
+    max-width: 500px;
+    margin: 0.5em auto;
+    font-size: 0.9em;
+}
+
+/* Main Section with Flexbox Layout */
+.main-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2em 1em;
+}
+
+.about, .info {
+    max-width: 400px;
+    margin: 0 1em;
+}
+
+.about h2, .info h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.about p, .info ul {
+    font-size: 0.95em;
+}
+
+/* Info Section */
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info li {
+    margin: 0.5em 0;
+}
+
+.info a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #f1f1f1;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    margin: 0.5em 0;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #4a90e2;
+    padding: 1.5em;
+    text-align: center;
+    color: #fff;
+}
+
+.contact h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact li {
+    display: inline;
+    margin: 0 0.5em;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}

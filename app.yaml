@@ -1,0 +1,13 @@
+runtime: python39  # or python3.7, python3.8, or python3.10 for other supported versions
+
+handlers:
+  - url: /
+    static_files: index.html
+    upload: index.html
+
+  - url: /
+    static_dir: static
+
+# Optional: Define your app's environment
+env_variables:
+  ENV: "production"
